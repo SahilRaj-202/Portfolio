@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>Sahil Raj | UI/UX Designer</title>
+  <meta name="description" content="Sahil Raj — Award-winning UI/UX Designer crafting intuitive, beautiful digital experiences. Specializing in user-centered design, interaction design, and design systems." />
+  <meta name="keywords" content="UI/UX Designer, Product Designer, User Experience, User Interface, Portfolio, Sahil Raj, Design Systems, Figma, Web Design, Mobile App Design" />
+  <meta name="author" content="Sahil Raj" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sahilraj.design/" />
+  <meta property="og:title" content="Sahil Raj | UI/UX Designer" />
+  <meta property="og:description" content="Award-winning UI/UX Designer crafting intuitive, beautiful digital experiences that users love." />
+  <meta property="og:image" content="https://sahilraj.design/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Sahil Raj Portfolio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://sahilraj.design/" />
+  <meta name="twitter:title" content="Sahil Raj | UI/UX Designer" />
+  <meta name="twitter:description" content="Award-winning UI/UX Designer crafting intuitive, beautiful digital experiences that users love." />
+  <meta name="twitter:image" content="https://sahilraj.design/assets/og-image.jpg" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://sahilraj.design/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="no-scroll">
+
+  <!-- ======================================================
+       PRELOADER
+  ======================================================= -->
+  <div id="preloader" class="preloader" aria-label="Loading">
+    <div class="preloader__content">
+      <!-- 3D Cube Animation -->
+      <div class="preloader__cube">
+        <div class="cube-face cube-face--front"></div>
+        <div class="cube-face cube-face--back"></div>
+        <div class="cube-face cube-face--right"></div>
+        <div class="cube-face cube-face--left"></div>
+        <div class="cube-face cube-face--top"></div>
+        <div class="cube-face cube-face--bottom"></div>
+      </div>
+      <p class="preloader__text">Loading Experience...</p>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       NAVIGATION (Fixed)
+  ======================================================= -->
+  <header id="header" class="header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <!-- Logo -->
+      <a href="#home" class="nav__logo" aria-label="Sahil Raj — Home">
+        <span class="nav__logo-icon">SR</span>
+        <span class="nav__logo-text">Sahil Raj</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul id="nav-menu" class="nav__menu" role="menubar">
+        <li class="nav__item" role="none">
+          <a href="#home" class="nav__link active" role="menuitem">Home</a>
+        </li>
+        <li class="nav__item" role="none">
+          <a href="#about" class="nav__link" role="menuitem">About</a>
+        </li>
+        <li class="nav__item" role="none">
+          <a href="#skills" class="nav__link" role="menuitem">Skills</a>
+        </li>
+        <li class="nav__item" role="none">
+          <a href="#projects" class="nav__link" role="menuitem">Projects</a>
+        </li>
+        <li class="nav__item" role="none">
+          <a href="#experience" class="nav__link" role="menuitem">Experience</a>
+        </li>
+        <li class="nav__item" role="none">
+          <a href="#achievements" class="nav__link" role="menuitem">Achievements</a>
+        </li>
+        <li class="nav__item" role="none">
+          <a href="#contact" class="nav__link" role="menuitem">Contact</a>
+        </li>
+      </ul>
+
+      <!-- CTA + Hamburger -->
+      <div class="nav__actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon theme-toggle__icon-dark"></i>
+          <i class="fa-solid fa-sun theme-toggle__icon-light"></i>
+        </button>
+        <a href="#contact" class="nav__cta btn btn--primary">
+          <span>Hire Me</span>
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+        <button id="nav-toggle" class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ======================================================
+       MOBILE MENU OVERLAY
+  ======================================================= -->
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__overlay"></div>
+    <div class="mobile-menu__content">
+      <ul class="mobile-menu__list">
+        <li><a href="#home" class="mobile-menu__link">Home</a></li>
+        <li><a href="#about" class="mobile-menu__link">About</a></li>
+        <li><a href="#skills" class="mobile-menu__link">Skills</a></li>
+        <li><a href="#projects" class="mobile-menu__link">Projects</a></li>
+        <li><a href="#experience" class="mobile-menu__link">Experience</a></li>
+        <li><a href="#achievements" class="mobile-menu__link">Achievements</a></li>
+        <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu__theme-container">
+        <span class="mobile-menu__theme-label">Switch Theme</span>
+        <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon theme-toggle__icon-dark"></i>
+          <i class="fa-solid fa-sun theme-toggle__icon-light"></i>
+        </button>
+      </div>
+      <a href="#contact" class="mobile-menu__cta btn btn--primary">
+        <span>Hire Me</span>
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       MAIN CONTENT
+  ======================================================= -->
+  <main id="main-content">
+
+    <!-- ==================================================
+         HERO SECTION
+    =================================================== -->
+    <section id="home" class="hero" aria-label="Hero introduction">
+
+      <!-- Decorative Floating Orbs -->
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+
+      <div class="hero__container container">
+        <div class="hero__content" data-reveal="fade-up">
+          <div class="hero__badge" data-reveal="fade-down" data-reveal-delay="200">
+            <span class="hero__badge-dot"></span>
+            <span>Open to Internships</span>
+          </div>
+
+          <h1 class="hero__title" data-reveal="fade-up" data-reveal-delay="400">
+            I Build Scalable<br />
+            Software & Web<br />
+            <span class="hero__title-accent">Solutions</span>
+          </h1>
+
+          <p class="hero__subtitle" data-reveal="fade-up" data-reveal-delay="600">
+            BCA Student &amp; Aspiring Software Engineer specializing in Java, OOP, and Modern Web Development.
+          </p>
+
+          <div class="hero__actions" data-reveal="fade-up" data-reveal-delay="800">
+            <a href="#projects" class="btn btn--primary btn--lg">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" class="btn btn--outline btn--lg">
+              <span>Get In Touch</span>
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Links Sidebar -->
+      <aside class="hero__social" aria-label="Social media links" data-reveal="fade-right" data-reveal-delay="1000">
+        <a href="https://github.com/SahilRaj-202" class="hero__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sahil-raj-77565a373" class="hero__social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <span class="hero__social-line" aria-hidden="true"></span>
+      </aside>
+
+      <!-- Scroll Down Indicator -->
+      <div class="hero__scroll" data-reveal="fade-up" data-reveal-delay="1200">
+        <a href="#about" class="hero__scroll-link" aria-label="Scroll down to About section">
+          <span class="hero__scroll-text">Scroll Down</span>
+          <span class="hero__scroll-icon">
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         ABOUT SECTION
+    =================================================== -->
+    <section id="about" class="about section" aria-labelledby="about-heading">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header" data-reveal="fade-up">
+          <span class="section__label">Get To Know Me</span>
+          <h2 id="about-heading" class="section__title">About Me</h2>
+          <div class="section__line" aria-hidden="true"></div>
+        </div>
+
+        <div class="about__grid">
+          <!-- Left — Image -->
+          <div class="about__image-wrapper" data-reveal="fade-right">
+            <div class="about__image-frame">
+              <img src="assets/sahil.jpeg" alt="Portrait photo of Sahil Raj" class="about__image" />
+              <div class="about__image-decoration" aria-hidden="true"></div>
+            </div>
+            <div class="about__image-dots" aria-hidden="true"></div>
+          </div>
+
+          <!-- Right — Text -->
+          <div class="about__content" data-reveal="fade-left">
+            <h3 class="about__content-title">
+              A passionate student developer who loves building software solutions
+            </h3>
+            <p class="about__text">
+              I’m a passionate and dedicated BCA (Bachelor of Computer Applications) student with a deep interest in programming, software development, and building real-world digital solutions. Currently pursuing my degree at L.N. Mishra College of Business Management, Muzaffarpur, I have developed a strong foundation in core computer science subjects such as Java, OOP (Object-Oriented Programming), DBMS, Operating Systems, and Web Technologies.
+            </p>
+            <p class="about__text">
+              I focus on turning theoretical knowledge into practical skills. I’ve built academic projects including an Elevator System Simulation and a Hotel Management System using Java, which helped me master real-life logic design, modular coding, and file handling. I am active on platforms like HackerRank and LeetCode, and am currently exploring modern full-stack development, Git, and React.
+            </p>
+
+            <!-- Stats Row -->
+            <div class="about__stats" data-reveal="fade-up" data-reveal-delay="200">
+              <div class="about__stat">
+                <span class="about__stat-number" data-count="5">0</span>
+                <span class="about__stat-suffix">+</span>
+                <span class="about__stat-label">Projects Built</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-number" data-count="2">0</span>
+                <span class="about__stat-suffix"></span>
+                <span class="about__stat-label">Simulations</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-number" data-count="100">0</span>
+                <span class="about__stat-suffix">+</span>
+                <span class="about__stat-label">Problems Solved</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-number" data-count="2026">0</span>
+                <span class="about__stat-suffix"></span>
+                <span class="about__stat-label">Graduation Year</span>
+              </div>
+            </div>
+
+            <!-- Download CV -->
+            <a href="Sahil_Raj_Resume.pdf" id="download-cv" class="btn btn--primary" download="Sahil_Raj_Resume.pdf" aria-label="Download Sahil Raj's CV">
+              <i class="fa-solid fa-download" aria-hidden="true"></i>
+              <span>Download CV</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SKILLS SECTION
+    =================================================== -->
+    <section id="skills" class="skills section" aria-labelledby="skills-heading">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header" data-reveal="fade-up">
+          <span class="section__label">What I Work With</span>
+          <h2 id="skills-heading" class="section__title">My Skills</h2>
+          <div class="section__line" aria-hidden="true"></div>
+        </div>
+
+        <!-- Programming Languages & Core CS -->
+        <div class="skills__category" data-reveal="fade-up">
+          <h3 class="skills__category-title">
+            <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+            <span>Programming &amp; Core CS</span>
+          </h3>
+          <div class="skills__grid">
+            <div class="skills__card" data-skill="java" data-proficiency="90">
+              <div class="skills__card-icon">
+                <i class="fa-brands fa-java" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">Java</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 90%">
+                <div class="skills__card-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+
+            <div class="skills__card" data-skill="cpp" data-proficiency="82">
+              <div class="skills__card-icon">
+                <i class="fa-solid fa-cube" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">C / C++</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 82%">
+                <div class="skills__card-bar-fill" data-width="82"></div>
+              </div>
+            </div>
+
+            <div class="skills__card" data-skill="oop" data-proficiency="88">
+              <div class="skills__card-icon">
+                <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">OOP Concepts</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 88%">
+                <div class="skills__card-bar-fill" data-width="88"></div>
+              </div>
+            </div>
+
+            <div class="skills__card" data-skill="mysql" data-proficiency="85">
+              <div class="skills__card-icon">
+                <i class="fa-solid fa-database" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">SQL / MySQL</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 85%">
+                <div class="skills__card-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+
+            <div class="skills__card" data-skill="python" data-proficiency="60">
+              <div class="skills__card-icon">
+                <i class="fa-brands fa-python" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">Python (Basic)</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 60%">
+                <div class="skills__card-bar-fill" data-width="60"></div>
+              </div>
+            </div>
+
+            <div class="skills__card" data-skill="dsa" data-proficiency="85">
+              <div class="skills__card-icon">
+                <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">DSA</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 85%">
+                <div class="skills__card-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+
+            <div class="skills__card" data-skill="os" data-proficiency="80">
+              <div class="skills__card-icon">
+                <i class="fa-solid fa-server" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">Operating Systems</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 80%">
+                <div class="skills__card-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+
+            <div class="skills__card" data-skill="dbms" data-proficiency="85">
+              <div class="skills__card-icon">
+                <i class="fa-solid fa-table" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">DBMS</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 85%">
+                <div class="skills__card-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Web Dev & Software Engineering -->
+        <div class="skills__category" data-reveal="fade-up" data-reveal-delay="200">
+          <h3 class="skills__category-title">
+            <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+            <span>Web Dev &amp; Methodologies</span>
+          </h3>
+          <div class="skills__grid">
+            <div class="skills__card" data-skill="html-css" data-proficiency="92">
+              <div class="skills__card-icon">
+                <i class="fa-brands fa-html5" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">HTML/CSS</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 92%">
+                <div class="skills__card-bar-fill" data-width="92"></div>
+              </div>
+            </div>
+
+            <div class="skills__card" data-skill="javascript" data-proficiency="80">
+              <div class="skills__card-icon">
+                <i class="fa-brands fa-js" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">JavaScript</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 80%">
+                <div class="skills__card-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+
+            <div class="skills__card" data-skill="react" data-proficiency="70">
+              <div class="skills__card-icon">
+                <i class="fa-brands fa-react" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">React (Learning)</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 70%">
+                <div class="skills__card-bar-fill" data-width="70"></div>
+              </div>
+            </div>
+
+            <div class="skills__card" data-skill="github" data-proficiency="80">
+              <div class="skills__card-icon">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">Git &amp; GitHub</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 80%">
+                <div class="skills__card-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+
+            <div class="skills__card" data-skill="sdlc" data-proficiency="85">
+              <div class="skills__card-icon">
+                <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">SDLC / Agile</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 85%">
+                <div class="skills__card-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+
+            <div class="skills__card" data-skill="tech-consulting" data-proficiency="80">
+              <div class="skills__card-icon">
+                <i class="fa-solid fa-comments" aria-hidden="true"></i>
+              </div>
+              <h4 class="skills__card-name">Consulting / Analytics</h4>
+              <div class="skills__card-bar" aria-label="Proficiency: 80%">
+                <div class="skills__card-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         PROJECTS SECTION
+    =================================================== -->
+    <section id="projects" class="projects section" aria-labelledby="projects-heading">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header" data-reveal="fade-up">
+          <span class="section__label">My Portfolio</span>
+          <h2 id="projects-heading" class="section__title">Featured Projects</h2>
+          <div class="section__line" aria-hidden="true"></div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="projects__filters" data-reveal="fade-up" data-reveal-delay="200" role="tablist" aria-label="Filter projects by category">
+          <button class="projects__filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="projects__filter" data-filter="java-software" role="tab" aria-selected="false">Java / Software</button>
+          <button class="projects__filter" data-filter="web-dev" role="tab" aria-selected="false">Web Dev</button>
+          <button class="projects__filter" data-filter="job-simulations" role="tab" aria-selected="false">Job Simulations</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects__grid" role="tabpanel">
+
+          <!-- Project 1 -->
+          <article class="project__card" data-category="java-software" data-reveal="fade-up" data-reveal-delay="100">
+            <div class="project__card-image">
+              <img src="assets/project_fintech.png" alt="Elevator System Simulation preview" class="project__card-img" />
+              <span class="project__card-category">Java / Software</span>
+              <div class="project__card-overlay">
+                <a href="https://github.com/SahilRaj-202" class="project__card-link" target="_blank" aria-label="View Elevator System Simulation project">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project__card-body">
+              <h3 class="project__card-title">Elevator System Simulation</h3>
+              <p class="project__card-description">
+                Academic simulation project built in Java to model a real-time elevator scheduling system. Features request scheduling algorithms, cabin state transitions, and a modular OOP architecture.
+              </p>
+              <div class="project__card-tags">
+                <span class="project__tag">Java</span>
+                <span class="project__tag">OOP Concepts</span>
+                <span class="project__tag">Logic Design</span>
+              </div>
+              <a href="https://github.com/SahilRaj-202" target="_blank" class="project__card-view">
+                <span>View Project</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project__card" data-category="java-software" data-reveal="fade-up" data-reveal-delay="200">
+            <div class="project__card-image">
+              <img src="assets/project_health.png" alt="Hotel Management System preview" class="project__card-img" />
+              <span class="project__card-category">Java / Software</span>
+              <div class="project__card-overlay">
+                <a href="https://github.com/SahilRaj-202" class="project__card-link" target="_blank" aria-label="View Hotel Management System project">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project__card-body">
+              <h3 class="project__card-title">Hotel Management System</h3>
+              <p class="project__card-description">
+                Modular console-based Java application built to manage hotel desk check-ins, room availability, customer records, and billing details. Implements robust file handling for persistent data storage.
+              </p>
+              <div class="project__card-tags">
+                <span class="project__tag">Java</span>
+                <span class="project__tag">File Handling</span>
+                <span class="project__tag">Modular Coding</span>
+              </div>
+              <a href="https://github.com/SahilRaj-202" target="_blank" class="project__card-view">
+                <span>View Project</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project__card" data-category="job-simulations" data-reveal="fade-up" data-reveal-delay="300">
+            <div class="project__card-image">
+              <img src="assets/project_ecommerce.png" alt="Tech Consulting Job Simulation preview" class="project__card-img" />
+              <span class="project__card-category">Job Simulation</span>
+              <div class="project__card-overlay">
+                <a href="https://www.linkedin.com/in/sahil-raj-77565a373" class="project__card-link" target="_blank" aria-label="View Accenture Simulation details">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project__card-body">
+              <h3 class="project__card-title">Tech Consulting Simulation</h3>
+              <p class="project__card-description">
+                Accenture Australia simulated engagement focusing on consulting case studies. Defined technical client requirements, evaluated solution options, designed development lifecycles (Agile/RAD), and planned cloud configurations.
+              </p>
+              <div class="project__card-tags">
+                <span class="project__tag">Agile / SDLC</span>
+                <span class="project__tag">Requirements</span>
+                <span class="project__tag">Cloud Configuration</span>
+              </div>
+              <a href="https://www.linkedin.com/in/sahil-raj-77565a373" target="_blank" class="project__card-view">
+                <span>View Credentials</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project__card" data-category="job-simulations" data-reveal="fade-up" data-reveal-delay="100">
+            <div class="project__card-image">
+              <img src="assets/project_travel.png" alt="Data Analytics Job Simulation preview" class="project__card-img" />
+              <span class="project__card-category">Job Simulation</span>
+              <div class="project__card-overlay">
+                <a href="https://www.linkedin.com/in/sahil-raj-77565a373" class="project__card-link" target="_blank" aria-label="View Deloitte Simulation details">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project__card-body">
+              <h3 class="project__card-title">Data Analytics Case Study</h3>
+              <p class="project__card-description">
+                Deloitte Australia simulated analytics project focusing on data analytics workflows. Cleaned raw data streams, designed relational database schemas (MySQL), executed optimized SQL queries, and generated business metrics.
+              </p>
+              <div class="project__card-tags">
+                <span class="project__tag">Data Analysis</span>
+                <span class="project__tag">MySQL</span>
+                <span class="project__tag">SQL Optimization</span>
+              </div>
+              <a href="https://www.linkedin.com/in/sahil-raj-77565a373" target="_blank" class="project__card-view">
+                <span>View Credentials</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project__card" data-category="web-dev" data-reveal="fade-up" data-reveal-delay="200">
+            <div class="project__card-image">
+              <img src="assets/project_social.png" alt="Developer Portfolio preview" class="project__card-img" />
+              <span class="project__card-category">Web Dev</span>
+              <div class="project__card-overlay">
+                <a href="https://github.com/SahilRaj-202" class="project__card-link" target="_blank" aria-label="View Developer Portfolio code">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project__card-body">
+              <h3 class="project__card-title">Developer Portfolio</h3>
+              <p class="project__card-description">
+                Premium, responsive single-page web portfolio showcasing projects, skills, education, and credentials. Built with modern glassmorphism, responsive grid systems, and scroll reveal transitions.
+              </p>
+              <div class="project__card-tags">
+                <span class="project__tag">HTML / CSS</span>
+                <span class="project__tag">JavaScript</span>
+                <span class="project__tag">CSS Transitions</span>
+              </div>
+              <a href="https://github.com/SahilRaj-202" target="_blank" class="project__card-view">
+                <span>View Project Code</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project__card" data-category="web-dev" data-reveal="fade-up" data-reveal-delay="300">
+            <div class="project__card-image">
+              <div class="project__card-placeholder" aria-label="Modern Web Applications preview">
+                <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+              </div>
+              <span class="project__card-category">Web Dev</span>
+              <div class="project__card-overlay">
+                <a href="https://github.com/SahilRaj-202" class="project__card-link" target="_blank" aria-label="View web projects code">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project__card-body">
+              <h3 class="project__card-title">Modern Web Applications</h3>
+              <p class="project__card-description">
+                Exploring full-stack design patterns by building responsive interface mockups, stateful components in React, database connections, and managing Git version control.
+              </p>
+              <div class="project__card-tags">
+                <span class="project__tag">React</span>
+                <span class="project__tag">Git &amp; GitHub</span>
+                <span class="project__tag">Full Stack Principles</span>
+              </div>
+              <a href="https://github.com/SahilRaj-202" target="_blank" class="project__card-view">
+                <span>View Code Repository</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         EXPERIENCE SECTION
+    =================================================== -->
+    <section id="experience" class="experience section" aria-labelledby="experience-heading">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header" data-reveal="fade-up">
+          <span class="section__label">Career Path</span>
+          <h2 id="experience-heading" class="section__title">My Journey</h2>
+          <div class="section__line" aria-hidden="true"></div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="experience__timeline">
+
+          <!-- Entry 1 -->
+          <div class="experience__item" data-reveal="fade-up" data-reveal-delay="100">
+            <div class="experience__item-dot" aria-hidden="true"></div>
+            <div class="experience__item-line" aria-hidden="true"></div>
+            <div class="experience__item-content">
+              <span class="experience__item-date">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                July 2023 — June 2026
+              </span>
+              <h3 class="experience__item-role">Bachelor of Computer Applications (BCA)</h3>
+              <h4 class="experience__item-company">
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                L.N. Mishra College of Business Management, Muzaffarpur
+              </h4>
+              <p class="experience__item-description">
+                Currently pursuing full-time BCA degree with a focus on Software Development, Object-Oriented Programming, Database Management Systems (DBMS), Operating Systems, and Web Technologies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Entry 2 -->
+          <div class="experience__item" data-reveal="fade-up" data-reveal-delay="200">
+            <div class="experience__item-dot" aria-hidden="true"></div>
+            <div class="experience__item-line" aria-hidden="true"></div>
+            <div class="experience__item-content">
+              <span class="experience__item-date">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                Job Simulation
+              </span>
+              <h3 class="experience__item-role">Technology Consulting Job Simulation</h3>
+              <h4 class="experience__item-company">
+                <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                Accenture Australia (Forage Credential)
+              </h4>
+              <p class="experience__item-description">
+                Completed a virtual consulting engagement simulation. Gathered and mapped client requirements, proposed software architectures, aligned lifecycle frameworks (Agile, RAD, Waterfall), and evaluated cloud hosting solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Entry 3 -->
+          <div class="experience__item" data-reveal="fade-up" data-reveal-delay="300">
+            <div class="experience__item-dot" aria-hidden="true"></div>
+            <div class="experience__item-line" aria-hidden="true"></div>
+            <div class="experience__item-content">
+              <span class="experience__item-date">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                Job Simulation
+              </span>
+              <h3 class="experience__item-role">Data Analytics Job Simulation</h3>
+              <h4 class="experience__item-company">
+                <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                Deloitte Australia (Forage Credential)
+              </h4>
+              <p class="experience__item-description">
+                Completed simulated data analytics workflows. Performed data hygiene operations, mapped data schemas, created and optimized MySQL query procedures, and formulated data insights for executive dashboards.
+              </p>
+            </div>
+          </div>
+
+          <!-- Entry 4 -->
+          <div class="experience__item" data-reveal="fade-up" data-reveal-delay="400">
+            <div class="experience__item-dot" aria-hidden="true"></div>
+            <div class="experience__item-content">
+              <span class="experience__item-date">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                Academic Experience
+              </span>
+              <h3 class="experience__item-role">Java Project Developer</h3>
+              <h4 class="experience__item-company">
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                College Academic Labs
+              </h4>
+              <p class="experience__item-description">
+                Designed modular Java-based console systems during lab classes. Coded an Elevator System Simulation to optimize floor requests and a Hotel Management System to save booking records via file handling streams.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         ACHIEVEMENTS & CERTIFICATIONS SECTION
+    =================================================== -->
+    <section id="achievements" class="achievements section" aria-labelledby="achievements-heading">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header" data-reveal="fade-up">
+          <span class="section__label">My Credentials</span>
+          <h2 id="achievements-heading" class="section__title">Achievements &amp; Certifications</h2>
+          <div class="section__line" aria-hidden="true"></div>
+          <p class="section__description">
+            Showcasing my academic credentials, professional certifications, and competitive programming profiles.
+          </p>
+        </div>
+
+        <!-- Coding Profiles Row -->
+        <div class="coding-profiles__grid" data-reveal="fade-up">
+          <!-- LeetCode Card -->
+          <a href="https://leetcode.com/u/SahilRaj-202/" target="_blank" rel="noopener noreferrer" class="coding-profile__card leetcode">
+            <div class="coding-profile__icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="coding-profile__info">
+              <h3 class="coding-profile__title">LeetCode</h3>
+              <p class="coding-profile__stats">100+ Problems Solved</p>
+              <span class="coding-profile__tag">DSA &amp; Problem Solving</span>
+            </div>
+            <div class="coding-profile__arrow">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </a>
+
+          <!-- HackerRank Card -->
+          <a href="https://www.hackerrank.com/profile/sahilrajgovinda4" target="_blank" rel="noopener noreferrer" class="coding-profile__card hackerrank">
+            <div class="coding-profile__icon">
+              <i class="fa-brands fa-hackerrank"></i>
+            </div>
+            <div class="coding-profile__info">
+              <h3 class="coding-profile__title">HackerRank</h3>
+              <p class="coding-profile__stats">Java Gold Badge</p>
+              <span class="coding-profile__tag">Problem Solving (5★)</span>
+            </div>
+            <div class="coding-profile__arrow">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </a>
+
+          <!-- GeeksforGeeks Card -->
+          <a href="https://www.geeksforgeeks.org/user/sahilrajgovinda4/" target="_blank" rel="noopener noreferrer" class="coding-profile__card gfg">
+            <div class="coding-profile__icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="coding-profile__info">
+              <h3 class="coding-profile__title">GeeksforGeeks</h3>
+              <p class="coding-profile__stats">Practice Profile</p>
+              <span class="coding-profile__tag">Java &amp; Core CS Practice</span>
+            </div>
+            <div class="coding-profile__arrow">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </a>
+        </div>
+
+        <!-- Certifications Slider Wrapper -->
+        <div class="certifications__slider-container" data-reveal="fade-up" data-reveal-delay="200">
+          <div class="certifications__slider">
+            <div class="certifications__track" id="cert-track">
+
+              <!-- Certificate 1: NPTEL Java -->
+              <article class="cert__card">
+                <div class="cert__image-wrapper">
+                  <img src="assets/cert_nptel_java.png" alt="NPTEL Elite Java Programming Certificate" class="cert__img" />
+                  <div class="cert__overlay">
+                    <button class="btn btn--primary btn--sm cert__zoom-btn" data-cert-src="assets/cert_nptel_java.png" data-cert-title="Programming in Java — NPTEL (IIT Kharagpur)">
+                      <i class="fa-solid fa-magnifying-glass-plus"></i> View Full Size
+                    </button>
+                  </div>
+                </div>
+                <div class="cert__body">
+                  <span class="cert__badge cert__badge--elite">Elite (83%)</span>
+                  <h3 class="cert__title">Programming in Java</h3>
+                  <p class="cert__org"><i class="fa-solid fa-university"></i> IIT Kharagpur (NPTEL)</p>
+                  <span class="cert__date"><i class="fa-regular fa-calendar"></i> Jan — Apr 2026 (12 Weeks)</span>
+                  <a href="https://www.linkedin.com/in/sahil-raj-77565a373" target="_blank" rel="noopener noreferrer" class="cert__verify-link">
+                    <i class="fa-brands fa-linkedin"></i> Verify on LinkedIn
+                  </a>
+                </div>
+              </article>
+
+              <!-- Certificate 2: Infosys Java Programming -->
+              <article class="cert__card">
+                <div class="cert__image-wrapper">
+                  <img src="assets/cert_infosys_java_programming.png" alt="Programming using Java Certificate" class="cert__img" />
+                  <div class="cert__overlay">
+                    <button class="btn btn--primary btn--sm cert__zoom-btn" data-cert-src="assets/cert_infosys_java_programming.png" data-cert-title="Programming using Java — Infosys Springboard">
+                      <i class="fa-solid fa-magnifying-glass-plus"></i> View Full Size
+                    </button>
+                  </div>
+                </div>
+                <div class="cert__body">
+                  <span class="cert__badge cert__badge--infosys">Infosys Springboard</span>
+                  <h3 class="cert__title">Programming using Java</h3>
+                  <p class="cert__org"><i class="fa-solid fa-certificate"></i> Infosys Springboard</p>
+                  <span class="cert__date"><i class="fa-regular fa-calendar"></i> Completed May 2026</span>
+                  <a href="https://www.linkedin.com/in/sahil-raj-77565a373" target="_blank" rel="noopener noreferrer" class="cert__verify-link">
+                    <i class="fa-brands fa-linkedin"></i> Verify on LinkedIn
+                  </a>
+                </div>
+              </article>
+
+              <!-- Certificate 3: Infosys Java Fundamentals -->
+              <article class="cert__card">
+                <div class="cert__image-wrapper">
+                  <img src="assets/cert_java_fundamentals.png" alt="Java Programming Fundamentals Certificate" class="cert__img" />
+                  <div class="cert__overlay">
+                    <button class="btn btn--primary btn--sm cert__zoom-btn" data-cert-src="assets/cert_java_fundamentals.png" data-cert-title="Java Programming Fundamentals — Infosys Springboard">
+                      <i class="fa-solid fa-magnifying-glass-plus"></i> View Full Size
+                    </button>
+                  </div>
+                </div>
+                <div class="cert__body">
+                  <span class="cert__badge cert__badge--infosys">Infosys Springboard</span>
+                  <h3 class="cert__title">Java Programming Fundamentals</h3>
+                  <p class="cert__org"><i class="fa-solid fa-certificate"></i> Infosys Springboard</p>
+                  <span class="cert__date"><i class="fa-regular fa-calendar"></i> Completed April 2026</span>
+                  <a href="https://www.linkedin.com/in/sahil-raj-77565a373" target="_blank" rel="noopener noreferrer" class="cert__verify-link">
+                    <i class="fa-brands fa-linkedin"></i> Verify on LinkedIn
+                  </a>
+                </div>
+              </article>
+
+              <!-- Certificate 4: Infosys DBMS Part 1 -->
+              <article class="cert__card">
+                <div class="cert__image-wrapper">
+                  <img src="assets/cert_dbms_1.png" alt="Database Management System Part-1 Certificate" class="cert__img" />
+                  <div class="cert__overlay">
+                    <button class="btn btn--primary btn--sm cert__zoom-btn" data-cert-src="assets/cert_dbms_1.png" data-cert-title="Database Management System Part - 1 — Infosys Springboard">
+                      <i class="fa-solid fa-magnifying-glass-plus"></i> View Full Size
+                    </button>
+                  </div>
+                </div>
+                <div class="cert__body">
+                  <span class="cert__badge cert__badge--infosys">Infosys Springboard</span>
+                  <h3 class="cert__title">DBMS Part - 1</h3>
+                  <p class="cert__org"><i class="fa-solid fa-certificate"></i> Infosys Springboard</p>
+                  <span class="cert__date"><i class="fa-regular fa-calendar"></i> Completed April 2026</span>
+                  <a href="https://www.linkedin.com/in/sahil-raj-77565a373" target="_blank" rel="noopener noreferrer" class="cert__verify-link">
+                    <i class="fa-brands fa-linkedin"></i> Verify on LinkedIn
+                  </a>
+                </div>
+              </article>
+
+              <!-- Certificate 5: Infosys DBMS Part 2 -->
+              <article class="cert__card">
+                <div class="cert__image-wrapper">
+                  <img src="assets/cert_dbms_2.png" alt="Database Management System Part-2 Certificate" class="cert__img" />
+                  <div class="cert__overlay">
+                    <button class="btn btn--primary btn--sm cert__zoom-btn" data-cert-src="assets/cert_dbms_2.png" data-cert-title="Database Management System Part - 2 — Infosys Springboard">
+                      <i class="fa-solid fa-magnifying-glass-plus"></i> View Full Size
+                    </button>
+                  </div>
+                </div>
+                <div class="cert__body">
+                  <span class="cert__badge cert__badge--infosys">Infosys Springboard</span>
+                  <h3 class="cert__title">DBMS Part - 2</h3>
+                  <p class="cert__org"><i class="fa-solid fa-certificate"></i> Infosys Springboard</p>
+                  <span class="cert__date"><i class="fa-regular fa-calendar"></i> Completed April 2026</span>
+                  <a href="https://www.linkedin.com/in/sahil-raj-77565a373" target="_blank" rel="noopener noreferrer" class="cert__verify-link">
+                    <i class="fa-brands fa-linkedin"></i> Verify on LinkedIn
+                  </a>
+                </div>
+              </article>
+
+              <!-- Certificate 6: Infosys NoSQL -->
+              <article class="cert__card">
+                <div class="cert__image-wrapper">
+                  <img src="assets/cert_nosql_databases.png" alt="Introduction to NoSQL databases Certificate" class="cert__img" />
+                  <div class="cert__overlay">
+                    <button class="btn btn--primary btn--sm cert__zoom-btn" data-cert-src="assets/cert_nosql_databases.png" data-cert-title="Introduction to NoSQL databases — Infosys Springboard">
+                      <i class="fa-solid fa-magnifying-glass-plus"></i> View Full Size
+                    </button>
+                  </div>
+                </div>
+                <div class="cert__body">
+                  <span class="cert__badge cert__badge--infosys">Infosys Springboard</span>
+                  <h3 class="cert__title">Introduction to NoSQL</h3>
+                  <p class="cert__org"><i class="fa-solid fa-certificate"></i> Infosys Springboard</p>
+                  <span class="cert__date"><i class="fa-regular fa-calendar"></i> Completed April 2026</span>
+                  <a href="https://www.linkedin.com/in/sahil-raj-77565a373" target="_blank" rel="noopener noreferrer" class="cert__verify-link">
+                    <i class="fa-brands fa-linkedin"></i> Verify on LinkedIn
+                  </a>
+                </div>
+              </article>
+
+              <!-- Certificate 7: Infosys SE & Agile -->
+              <article class="cert__card">
+                <div class="cert__image-wrapper">
+                  <img src="assets/cert_software_engineering_agile.png" alt="Software Engineering & Agile Certificate" class="cert__img" />
+                  <div class="cert__overlay">
+                    <button class="btn btn--primary btn--sm cert__zoom-btn" data-cert-src="assets/cert_software_engineering_agile.png" data-cert-title="Software Engineering and Agile software development — Infosys Springboard">
+                      <i class="fa-solid fa-magnifying-glass-plus"></i> View Full Size
+                    </button>
+                  </div>
+                </div>
+                <div class="cert__body">
+                  <span class="cert__badge cert__badge--infosys">Infosys Springboard</span>
+                  <h3 class="cert__title">Software Engineering &amp; Agile</h3>
+                  <p class="cert__org"><i class="fa-solid fa-certificate"></i> Infosys Springboard</p>
+                  <span class="cert__date"><i class="fa-regular fa-calendar"></i> Completed April 2026</span>
+                  <a href="https://www.linkedin.com/in/sahil-raj-77565a373" target="_blank" rel="noopener noreferrer" class="cert__verify-link">
+                    <i class="fa-brands fa-linkedin"></i> Verify on LinkedIn
+                  </a>
+                </div>
+              </article>
+
+              <!-- Certificate 8: Infosys Agile Scrum -->
+              <article class="cert__card">
+                <div class="cert__image-wrapper">
+                  <img src="assets/cert_agile_scrum.png" alt="Agile Scrum in Practice Certificate" class="cert__img" />
+                  <div class="cert__overlay">
+                    <button class="btn btn--primary btn--sm cert__zoom-btn" data-cert-src="assets/cert_agile_scrum.png" data-cert-title="Agile Scrum in Practice — Infosys Springboard">
+                      <i class="fa-solid fa-magnifying-glass-plus"></i> View Full Size
+                    </button>
+                  </div>
+                </div>
+                <div class="cert__body">
+                  <span class="cert__badge cert__badge--infosys">Infosys Springboard</span>
+                  <h3 class="cert__title">Agile Scrum in Practice</h3>
+                  <p class="cert__org"><i class="fa-solid fa-certificate"></i> Infosys Springboard</p>
+                  <span class="cert__date"><i class="fa-regular fa-calendar"></i> Completed April 2026</span>
+                  <a href="https://www.linkedin.com/in/sahil-raj-77565a373" target="_blank" rel="noopener noreferrer" class="cert__verify-link">
+                    <i class="fa-brands fa-linkedin"></i> Verify on LinkedIn
+                  </a>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="certifications__controls">
+            <button id="cert-prev" class="certifications__control-btn" aria-label="Previous certificate">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="certifications__dots" id="cert-dots">
+              <span class="slider-dot active" role="button" aria-label="Slide 1"></span>
+              <span class="slider-dot" role="button" aria-label="Slide 2"></span>
+              <span class="slider-dot" role="button" aria-label="Slide 3"></span>
+              <span class="slider-dot" role="button" aria-label="Slide 4"></span>
+              <span class="slider-dot" role="button" aria-label="Slide 5"></span>
+              <span class="slider-dot" role="button" aria-label="Slide 6"></span>
+              <span class="slider-dot" role="button" aria-label="Slide 7"></span>
+              <span class="slider-dot" role="button" aria-label="Slide 8"></span>
+            </div>
+            <button id="cert-next" class="certifications__control-btn" aria-label="Next certificate">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         CONTACT SECTION
+    =================================================== -->
+    <section id="contact" class="contact section" aria-labelledby="contact-heading">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section__header" data-reveal="fade-up">
+          <span class="section__label">Get In Touch</span>
+          <h2 id="contact-heading" class="section__title">Let's Work Together</h2>
+          <div class="section__line" aria-hidden="true"></div>
+          <p class="section__description">
+            Have a project in mind or just want to say hello? I'd love to hear from you. 
+            Let's create something amazing together.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+
+          <!-- Left — Contact Info -->
+          <div class="contact__info" data-reveal="fade-right">
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="contact__info-content">
+                <h3 class="contact__info-label">Email</h3>
+                <a href="mailto:sahilrajgovinda4@gmail.com" class="contact__info-value">sahilrajgovinda4@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              </div>
+              <div class="contact__info-content">
+                <h3 class="contact__info-label">Phone</h3>
+                <a href="tel:+917564946570" class="contact__info-value">+91 7564946570</a>
+              </div>
+            </div>
+
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              </div>
+              <div class="contact__info-content">
+                <h3 class="contact__info-label">Location</h3>
+                <p class="contact__info-value">
+                  Siho, PO: Siho, Muzaffarpur,<br />
+                  Bihar - 843119, India
+                </p>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="contact__socials">
+              <h3 class="contact__socials-title">Follow Me</h3>
+              <div class="contact__socials-links">
+                <a href="https://github.com/SahilRaj-202" class="contact__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sahil-raj-77565a373" class="contact__social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right — Contact Form -->
+          <form id="contact-form" class="contact__form" data-reveal="fade-left" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <div class="contact__form-group">
+              <label for="contact-name" class="contact__form-label">Full Name</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                class="contact__form-input"
+                placeholder="John Doe"
+                required
+                autocomplete="name"
+                aria-required="true"
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="contact-email" class="contact__form-label">Email Address</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                class="contact__form-input"
+                placeholder="john@example.com"
+                required
+                autocomplete="email"
+                aria-required="true"
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="contact-subject" class="contact__form-label">Subject</label>
+              <input
+                type="text"
+                id="contact-subject"
+                name="subject"
+                class="contact__form-input"
+                placeholder="Project Inquiry"
+                required
+                aria-required="true"
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="contact-message" class="contact__form-label">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                class="contact__form-input contact__form-textarea"
+                placeholder="Tell me about your project..."
+                rows="6"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+
+            <button type="submit" id="contact-submit" class="btn btn--primary btn--lg contact__form-submit">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </button>
+
+            <!-- Form Status Messages -->
+            <div id="form-status" class="contact__form-status" role="alert" aria-live="polite"></div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+  ======================================================= -->
+  <footer id="footer" class="footer">
+    <!-- Decorative Top Wave -->
+    <div class="footer__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,60 L1440,120 L0,120 Z" fill="currentColor"/>
+      </svg>
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="footer__cta-banner">
+      <div class="container">
+        <div class="footer__cta-content">
+          <div class="footer__cta-text">
+            <h3 class="footer__cta-title">Let's Build Something Amazing Together</h3>
+            <p class="footer__cta-description">Have a project idea or want to collaborate? I'm always excited to work on new challenges.</p>
+          </div>
+          <a href="#contact" class="btn btn--primary btn--lg footer__cta-btn">
+            <span>Start a Conversation</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__grid">
+
+          <!-- Footer Brand -->
+          <div class="footer__brand">
+            <a href="#home" class="footer__logo" aria-label="Sahil Raj — Home">
+              <span class="footer__logo-icon">SR</span>
+              <span class="footer__logo-text">Sahil Raj</span>
+            </a>
+            <p class="footer__description">
+              BCA Student & Aspiring Software Developer passionate about building scalable software solutions, web applications, and solving real-world problems through code.
+            </p>
+            <div class="footer__socials-links">
+              <a href="https://github.com/SahilRaj-202" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+                <span class="footer__social-tooltip">GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/sahil-raj-77565a373" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span class="footer__social-tooltip">LinkedIn</span>
+              </a>
+              <a href="mailto:sahilrajgovinda4@gmail.com" class="footer__social-link" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="footer__social-tooltip">Email</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer__links">
+            <h3 class="footer__links-title">
+              <span class="footer__links-title-dot"></span>
+              Quick Links
+            </h3>
+            <ul class="footer__links-list">
+              <li><a href="#home" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+              <li><a href="#about" class="footer__link"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+              <li><a href="#skills" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Skills</a></li>
+              <li><a href="#projects" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+              <li><a href="#experience" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Experience</a></li>
+              <li><a href="#contact" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer__contact">
+            <h3 class="footer__links-title">
+              <span class="footer__links-title-dot"></span>
+              Get In Touch
+            </h3>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:sahilrajgovinda4@gmail.com">sahilrajgovinda4@gmail.com</a>
+              </li>
+              <li class="footer__contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+917564946570">+91 7564946570</a>
+              </li>
+              <li class="footer__contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Muzaffarpur, Bihar, India</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          <span class="footer__copyright-icon">💻</span>
+          Designed & Built by <strong>Sahil Raj</strong> &copy; <span id="current-year">2026</span>. All rights reserved.
+        </p>
+        <div class="footer__bottom-links">
+          <span class="footer__tech-badge">HTML</span>
+          <span class="footer__tech-badge">CSS</span>
+          <span class="footer__tech-badge">JavaScript</span>
+        </div>
+        <a href="#home" id="back-to-top" class="footer__back-to-top" aria-label="Back to top">
+          <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+          <span>Top</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================
+       PROJECT DETAILS MODAL
+  ======================================================= -->
+  <div id="project-modal" class="project-modal" aria-hidden="true" role="dialog">
+    <div class="project-modal__overlay"></div>
+    <div class="project-modal__container">
+      <button id="project-modal-close" class="project-modal__close" aria-label="Close details">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="project-modal__content">
+        <div class="project-modal__left">
+          <div id="project-modal-showcase" class="project-modal__showcase">
+            <!-- Dynamic showcase content: image or terminal mockup -->
+          </div>
+        </div>
+        <div class="project-modal__right">
+          <span id="project-modal-category" class="project-modal__category">Category</span>
+          <h2 id="project-modal-title" class="project-modal__title">Project Title</h2>
+          <div class="project-modal__divider"></div>
+          <p id="project-modal-description" class="project-modal__description">Project description goes here...</p>
+          <div class="project-modal__meta">
+            <h4 class="project-modal__meta-title">Technologies Used</h4>
+            <div id="project-modal-tags" class="project-modal__tags">
+              <!-- Dynamic tags -->
+            </div>
+          </div>
+          <div class="project-modal__actions">
+            <a id="project-modal-link" href="#" target="_blank" class="btn btn--primary">
+              <span>View Source Code</span>
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       CERTIFICATE LIGHTBOX MODAL
+  ======================================================= -->
+  <div id="cert-modal" class="cert-modal" aria-hidden="true" role="dialog">
+    <div class="cert-modal__overlay"></div>
+    <div class="cert-modal__container">
+      <button id="cert-modal-close" class="cert-modal__close" aria-label="Close certificate">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="cert-modal-img" src="" alt="Full size certificate" class="cert-modal__img" />
+      <h3 id="cert-modal-title" class="cert-modal__title">Certificate Name</h3>
+      <a href="https://www.linkedin.com/in/sahil-raj-77565a373" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm cert-modal__verify-btn" style="margin-top: 15px; display: inline-flex; width: auto; gap: 8px;">
+        <i class="fa-brands fa-linkedin"></i> Verify on LinkedIn
+      </a>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       SCRIPTS
+  ======================================================= -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+

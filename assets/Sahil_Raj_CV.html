@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Raj — CV / Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ---- Reset ---- */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* ---- Page ---- */
+    html { font-size: 15px; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1a1a2e;
+      background: #f8f9fc;
+      line-height: 1.65;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .cv {
+      max-width: 820px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    /* ---- Header ---- */
+    .cv-header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #fff;
+      padding: 48px 56px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cv-header::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(circle, rgba(99,102,241,0.2), transparent 60%);
+      border-radius: 50%;
+    }
+
+    .cv-header h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cv-header .tagline {
+      font-size: 1rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cv-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 28px;
+      font-size: 0.85rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cv-contact a {
+      color: rgba(255,255,255,0.9);
+      text-decoration: none;
+    }
+
+    .cv-contact span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .cv-contact .icon {
+      display: inline-block;
+      width: 16px;
+      text-align: center;
+    }
+
+    /* ---- Body ---- */
+    .cv-body {
+      padding: 40px 56px 48px;
+    }
+
+    /* ---- Section ---- */
+    .cv-section {
+      margin-bottom: 32px;
+    }
+
+    .cv-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .cv-section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #1a1a2e;
+      padding-bottom: 8px;
+      border-bottom: 3px solid;
+      border-image: linear-gradient(90deg, #6366f1, #ec4899) 1;
+      margin-bottom: 18px;
+    }
+
+    /* ---- Summary ---- */
+    .cv-summary {
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.75;
+    }
+
+    /* ---- Education ---- */
+    .cv-edu-title {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #1a1a2e;
+    }
+
+    .cv-edu-school {
+      font-weight: 600;
+      color: #6366f1;
+      font-size: 0.95rem;
+    }
+
+    .cv-edu-date {
+      font-size: 0.85rem;
+      color: #888;
+      margin-bottom: 8px;
+    }
+
+    .cv-coursework {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .cv-coursework span {
+      padding: 4px 12px;
+      background-color: #f0f0ff;
+      border: 1px solid #e0e0f5;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      color: #4f46e5;
+      font-weight: 500;
+    }
+
+    /* ---- Skills ---- */
+    .cv-skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .cv-skill-group h4 {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #1a1a2e;
+      margin-bottom: 6px;
+    }
+
+    .cv-skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .cv-skill-tags span {
+      padding: 4px 12px;
+      background-color: #f5f3ff;
+      border: 1px solid #e9e5ff;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      color: #5b21b6;
+      font-weight: 500;
+    }
+
+    /* ---- Projects ---- */
+    .cv-project {
+      margin-bottom: 18px;
+    }
+
+    .cv-project:last-child {
+      margin-bottom: 0;
+    }
+
+    .cv-project h4 {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #1a1a2e;
+      margin-bottom: 6px;
+    }
+
+    .cv-project h4 span {
+      font-weight: 400;
+      color: #6366f1;
+      font-size: 0.85rem;
+    }
+
+    .cv-project ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .cv-project ul li {
+      position: relative;
+      padding-left: 18px;
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 4px;
+    }
+
+    .cv-project ul li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: #6366f1;
+      font-weight: 700;
+    }
+
+    /* ---- Certifications ---- */
+    .cv-cert-list {
+      list-style: none;
+    }
+
+    .cv-cert-list li {
+      position: relative;
+      padding-left: 22px;
+      font-size: 0.9rem;
+      color: #444;
+      margin-bottom: 8px;
+    }
+
+    .cv-cert-list li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      color: #6366f1;
+    }
+
+    /* ---- Achievements ---- */
+    .cv-achieve-list {
+      list-style: none;
+    }
+
+    .cv-achieve-list li {
+      position: relative;
+      padding-left: 22px;
+      font-size: 0.9rem;
+      color: #444;
+      margin-bottom: 6px;
+    }
+
+    .cv-achieve-list li::before {
+      content: "●";
+      position: absolute;
+      left: 0;
+      color: #ec4899;
+      font-size: 0.6rem;
+      top: 6px;
+    }
+
+    /* ---- Objective ---- */
+    .cv-objective {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.7;
+      font-style: italic;
+      border-left: 3px solid #6366f1;
+      padding-left: 16px;
+    }
+
+    /* ---- Print Button ---- */
+    .cv-print-bar {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .cv-print-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 32px;
+      background: linear-gradient(135deg, #6366f1, #ec4899);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cv-print-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(99, 102, 241, 0.35);
+    }
+
+    /* ---- Print Styles ---- */
+    @media print {
+      html { font-size: 13px; }
+      body { background: #fff; }
+      .cv { margin: 0; box-shadow: none; border-radius: 0; }
+      .cv-header { padding: 32px 40px 28px; }
+      .cv-body { padding: 28px 40px 32px; }
+      .cv-print-bar { display: none; }
+      .cv-section { margin-bottom: 22px; }
+      .cv-coursework span, .cv-skill-tags span {
+        border: 1px solid #ccc;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .cv-header { padding: 32px 24px 28px; }
+      .cv-body { padding: 28px 24px; }
+      .cv-header h1 { font-size: 1.8rem; }
+      .cv-skills-grid { grid-template-columns: 1fr; }
+      .cv-contact { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv">
+    <!-- Header -->
+    <div class="cv-header">
+      <h1>SAHIL RAJ</h1>
+      <p class="tagline">BCA Student | Aspiring Software Developer | Web Development Enthusiast</p>
+      <div class="cv-contact">
+        <span><span class="icon">📍</span> Siho, Muzaffarpur, Bihar – 843119, India</span>
+        <span><span class="icon">📞</span> <a href="tel:+917564946570">+91 7564946570</a></span>
+        <span><span class="icon">📧</span> <a href="mailto:sahilrajgovinda4@gmail.com">sahilrajgovinda4@gmail.com</a></span>
+        <span><span class="icon">🔗</span> <a href="https://www.linkedin.com/in/sahil-raj-77565a373" target="_blank">LinkedIn</a></span>
+        <span><span class="icon">🔗</span> <a href="https://github.com/SahilRaj-202" target="_blank">GitHub</a></span>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="cv-body">
+
+      <!-- Professional Summary -->
+      <div class="cv-section">
+        <h3 class="cv-section-title">Professional Summary</h3>
+        <p class="cv-summary">
+          Passionate and dedicated Bachelor of Computer Applications (BCA) student with strong foundations in Java, Object-Oriented Programming (OOP), Database Management Systems (DBMS), and Web Development. Experienced in building academic projects including a Hotel Management System and Elevator System Simulation. Enthusiastic about software engineering, problem-solving, and developing real-world applications. Seeking internship and entry-level opportunities to apply technical skills and grow as a software developer.
+        </p>
+      </div>
+
+      <!-- Education -->
+      <div class="cv-section">
+        <h3 class="cv-section-title">Education</h3>
+        <p class="cv-edu-title">Bachelor of Computer Applications (BCA)</p>
+        <p class="cv-edu-school">L.N. Mishra College of Business Management, Muzaffarpur</p>
+        <p class="cv-edu-date">July 2023 – June 2026</p>
+        <div class="cv-coursework">
+          <span>OOP</span>
+          <span>DBMS</span>
+          <span>Operating Systems</span>
+          <span>Software Engineering</span>
+          <span>Web Technologies</span>
+        </div>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="cv-section">
+        <h3 class="cv-section-title">Technical Skills</h3>
+        <div class="cv-skills-grid">
+          <div class="cv-skill-group">
+            <h4>Programming Languages</h4>
+            <div class="cv-skill-tags">
+              <span>Java</span>
+              <span>C</span>
+              <span>C++</span>
+              <span>Python (Basic)</span>
+            </div>
+          </div>
+          <div class="cv-skill-group">
+            <h4>Web Technologies</h4>
+            <div class="cv-skill-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+          <div class="cv-skill-group">
+            <h4>Concepts</h4>
+            <div class="cv-skill-tags">
+              <span>OOP</span>
+              <span>SDLC</span>
+              <span>Agile</span>
+              <span>Waterfall</span>
+              <span>RAD</span>
+              <span>DSA (Basic)</span>
+            </div>
+          </div>
+          <div class="cv-skill-group">
+            <h4>Tools & Platforms</h4>
+            <div class="cv-skill-tags">
+              <span>Git & GitHub</span>
+              <span>VS Code</span>
+              <span>Eclipse IDE</span>
+              <span>HackerRank</span>
+              <span>LeetCode</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="cv-section">
+        <h3 class="cv-section-title">Projects</h3>
+
+        <div class="cv-project">
+          <h4>Hotel Management System <span>— Java</span></h4>
+          <ul>
+            <li>Developed a Java-based application for hotel booking and management.</li>
+            <li>Implemented customer registration, room allocation, and billing functionalities.</li>
+            <li>Applied OOP principles for modular and maintainable code.</li>
+          </ul>
+        </div>
+
+        <div class="cv-project">
+          <h4>Elevator System Simulation <span>— Java</span></h4>
+          <ul>
+            <li>Designed a single-threaded elevator simulation using Java.</li>
+            <li>Implemented floor request handling, movement logic, and direction management.</li>
+            <li>Focused on real-world system behavior and object-oriented design.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="cv-section">
+        <h3 class="cv-section-title">Certifications</h3>
+        <ul class="cv-cert-list">
+          <li>Accenture Australia – Technology Consulting Job Simulation</li>
+          <li>Deloitte Australia – Data Analytics Job Simulation</li>
+        </ul>
+      </div>
+
+      <!-- Achievements -->
+      <div class="cv-section">
+        <h3 class="cv-section-title">Achievements & Activities</h3>
+        <ul class="cv-achieve-list">
+          <li>Participated in technical workshops and coding competitions.</li>
+          <li>Built multiple Java-based academic applications.</li>
+          <li>Active learner of Cloud Computing and Mobile Application Development.</li>
+          <li>Regularly practice coding and problem-solving on online platforms.</li>
+        </ul>
+      </div>
+
+      <!-- Career Objective -->
+      <div class="cv-section">
+        <h3 class="cv-section-title">Career Objective</h3>
+        <p class="cv-objective">
+          To secure an internship or entry-level software development role where I can apply my programming and web development skills, contribute to meaningful projects, and continue learning modern technologies while building a successful career in software engineering.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Print / Save Button -->
+  <div class="cv-print-bar">
+    <button class="cv-print-btn" onclick="window.print()">
+      📄 Save as PDF / Print
+    </button>
+  </div>
+
+</body>
+</html>
